@@ -27,5 +27,5 @@ def articles(request):
 def article(request, article_id):
     return render_to_response('article.html', {'article': Article.objects.get(id=article_id), 'comments': Comments.objects.filter(comments_article_id=article_id)})
 
-def tag(request, slug):
-    return render_to_response('tag_articles.html', {'articles': Article.objects.all(), 'tag': Tag.objects.select_related().get(slug=slug)})
+#def tag(request, slug):
+#    return render_to_response('tag_articles.html', {'articles': Article.objects.all(), 'tag': Tag.objects.select_related().get(slug=slug)})

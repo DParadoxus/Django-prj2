@@ -5,7 +5,7 @@ class Tag(models.Model):
     class Meta():
         db_table = 'tag'
     tag_text = models.CharField(max_length = 50)
-    slug = models.SlugField(max_length = 50, verbose_name='URL')
+    slug = models.SlugField(max_length = 50, verbose_name='tag')
     def __str__(self):
         return self.tag_text
     def save(self):

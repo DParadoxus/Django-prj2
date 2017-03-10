@@ -11,7 +11,5 @@ class ArticleAdmin(admin.ModelAdmin):
     inlines = [ArticleInline]
     list_filter = ['article_date']
 
-
-
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Tag)

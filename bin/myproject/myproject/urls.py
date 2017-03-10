@@ -19,6 +19,5 @@ import article
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', include('article.urls')),
     url(r'^', include('article.urls')),
 ]

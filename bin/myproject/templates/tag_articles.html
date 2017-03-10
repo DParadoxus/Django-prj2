@@ -8,7 +8,7 @@
 	<h6>Дата: {{article.article_date}}</h6>
 	<h4><a href="/articles/get/{{article.id}}">{{article.article_title}}</a></h4>
 	<p>{{article.article_text}}</p>
-	<p><h7>Теги: {{article.tag_article}}</h7></p>
+	<p><h7>Теги: <a href="/tag/{{article.tag_article}}">{{article.tag_article}}</a></h7></p>
 	<hr>
 {% endfor %}
 </body>
